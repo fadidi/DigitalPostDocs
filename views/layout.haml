@@ -1,0 +1,65 @@
+:erb
+  <!DOCTYPE html>
+%html{:lang => 'en'}
+  %head
+    %meta{:charset => 'utf-8'}
+    %title DigitalPost Documentation
+    %meta{:name => 'description', :content => 'Learn how to use the DigitalPost platform.'}
+    %link{:href => url('css/base.css'), :rel => :stylesheet}
+    %link{:href => 'http://fonts.googleapis.com/css?family=Ubuntu:400,700', :rel => 'stylesheet', :type => 'text/css'}
+    %script{:src => url('js/jquery-1.8.2.min.js')}
+    %script{:src => url('bootstrap/js/bootstrap.min.js')}
+  %body
+    .container
+      .row
+        .span12
+          %h1
+            DigitalPost Documentation
+            %small to keep you from going crazy...
+          %p &nbsp;
+      .row
+        .span10
+          %ul.nav.nav-tabs
+            %li
+              %a{:href => url('/')} Home
+            %li
+              %a{:href => url('/')} User Management
+            %li.active
+              %a{:href => url('/')} Resource Management
+            %li
+              %a{:href => url('/')} Configuration
+            %li
+              %a{:href => url('/')} FAQ
+        .span2
+          %ul.nav.nav-tabs.pull-right
+            %li
+              %a{:href => url('/')} Contact Support
+      .row
+        .span12
+          %ul.nav.nav-pills
+            %li.active
+              %a{:href => url('/')} Case Studies
+            %li
+              %a{:href => url('/')} External Links
+            %li
+              %a{:href => url('/')} Files
+            %li
+              %a{:href => url('/')} Pages
+            %li
+              %a{:href => url('/')} Photos
+            %li
+              %a{:href => url('/')} Timelines
+            %li
+              %a{:href => url('/')} Timeline Events
+            %li
+              %a{:href => url('/')} Admin Units
+            %li
+              %a{:href => url('/')} Languages
+      .row
+        .span12
+          = yield
+      .row
+        .span12.center
+          %hr
+          Brought to you by
+          %a{:href => 'http://www.fadidi.com'} Fadidi Digital Media
